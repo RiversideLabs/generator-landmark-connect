@@ -1,6 +1,6 @@
 {
 	"name": "generator-landmark-connect",
-	"version": "0.1.01",
+	"version": "0.1.02",
 	"description": "A Landmark Connect Project Generator for Yeoman",
 	"keywords": [
 		"landmarkjs",

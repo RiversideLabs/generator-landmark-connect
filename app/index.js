@@ -171,7 +171,7 @@ LandmarkGenerator.prototype.keys = function keys() {
 
 LandmarkGenerator.prototype.project = function project() {
 	
-	this.template('_config.json', 'config.json');
+	this.template('_config.xml', 'config.xml');
 	this.template('_package.json', 'package.json');
 	
 	this.copy('editorconfig', '.editorconfig');
