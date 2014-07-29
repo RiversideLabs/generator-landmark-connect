@@ -20,12 +20,6 @@ angular.module('landmarkConnect', ['ionic', 'ngAnimate', 'ngStorage', 'ngCordova
   });
 })
 
-.config(['$analyticsProvider', 'googleAnalyticsCordovaProvider', function ($analyticsProvider, googleAnalyticsCordovaProvider) {
-  googleAnalyticsCordovaProvider.trackingId = 'UA-52998912-2';
-  googleAnalyticsCordovaProvider.period = 20; // default: 10 (in seconds)
-  googleAnalyticsCordovaProvider.debug = true; // default: false
-}])
-
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
