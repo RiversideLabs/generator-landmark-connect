@@ -1,0 +1,1 @@
+{"id":"com.<%= _.slugify(organizationName) %>.<%= _.slugify(projectName) %>","name":"<%= projectName %>"}

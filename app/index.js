@@ -1,6 +1,7 @@
 var util = require('util'),
 	path = require('path'),
 	_ = require('lodash'),
+	fs = require('fs'),
 	utils = require('landmark-utils'),
 	colors = require('colors'),
 	yeoman = require('yeoman-generator');
@@ -180,6 +181,16 @@ LandmarkGenerator.prototype.project = function project() {
 	this.copy('gulpfile.js');
 	this.copy('icon-iTunesArtwork@2x.png');
 	
+	this.mkdir('.cordova');
+	this.template('_config.json', '.cordova/config.xml');
+	
+	this.mkdir('hooks');
+	this.mkdir('hooks/after_platform_add');
+	this.copy('hooks/after_platform_add/001_adjust_ios_deploy_target.js');
+	fs.chmod('hooks/after_platform_add/001_adjust_ios_deploy_target.js', '0777', function (err) {
+		if (err)
+			throw err;
+	});
 };
 
 LandmarkGenerator.prototype.app = function templates() {
