@@ -62,7 +62,7 @@ angular.module('landmarkConnect.services', ['cordovaGeolocationModule'])
 
 .factory('TourService', [ '$http', function($http) {
   var tours = [];
-  $http.get('http://landmarkjs-demo.herokuapp.com/api/tour/list').success(function(data){
+  $http.get('<%= landmarkJSUrl %>/api/tour/list').success(function(data){
     tours = data.tours;
   });
 

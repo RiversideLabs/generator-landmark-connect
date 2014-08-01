@@ -126,7 +126,7 @@ LandmarkGenerator.prototype.prompts = function prompts() {
 				this[key] = val;
 			}, this);
 			
-			if (!this.cloudinaryURL) {
+			if (!this.landmarkJSUrl) {
 				this.usingDemoAPI = true;
 				this.landmarkJSUrl = 'http://landmarkjs-demo.herokuapp.com';
 			}
