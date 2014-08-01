@@ -45,9 +45,7 @@ var LandmarkGenerator = module.exports = function LandmarkGenerator(args, option
 			bower: false,
 			skipMessage: true,
 			skipInstall: options['skip-install'],
-			callback: function () {
-				this.spawnCommand('gulp', ['install-plugins']);
-			}.bind(this) // bind the callback to the parent scope
+			callback: done
 		});
 		
 	});
