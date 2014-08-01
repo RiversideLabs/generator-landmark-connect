@@ -187,10 +187,6 @@ LandmarkGenerator.prototype.project = function project() {
 	this.mkdir('hooks');
 	this.mkdir('hooks/after_platform_add');
 	this.copy('hooks/after_platform_add/001_adjust_ios_deploy_target.js');
-	fs.chmod('hooks/after_platform_add/001_adjust_ios_deploy_target.js', '0777', function (err) {
-		if (err)
-			throw err;
-	});
 };
 
 LandmarkGenerator.prototype.app = function templates() {
