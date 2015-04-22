@@ -70,7 +70,7 @@ npm install -g cordova ionic
 ````
 
 
-## Notice
+## Credits
 
 The activity which is the subject of this mobile device application
 and shareware has been financed in part with Federal funds from the
